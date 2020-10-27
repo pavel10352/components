@@ -1,0 +1,67 @@
+#wishlist .item{
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+}
+#wishlist .item .photo{
+    display: inline-block;
+    position: relative;
+}
+#wishlist .item .labels{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    z-index: 2;
+}
+#wishlist .item .labels>div{
+    background: no-repeat center center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+#wishlist .item .labels .isfreedelivery{
+    background-image: url("images/free_delivery.svg");
+}
+#wishlist .item .labels .issale{
+    background-image: url("images/sale_o.png");
+}
+#wishlist .item a.delete-item{
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 10px;
+    background: url("images/close_light.svg") no-repeat center center;
+    background-size: contain;
+}
+#wishlist .size select{
+    font-size: 12px;
+    padding: 6px 10px 6px 7px;
+    max-width: 155px;
+    margin-top: 9px;
+}
+#wishlist .add-to-cart{
+    display: inline-block;
+    color: white;
+    background: #642f00;
+    font-size: 12px;
+    padding: 6px 7px;
+    max-width: 119px;
+    margin-top: 9px;
+}
+#wishlist strong.discount-price{
+    color: rgba(75,72,47,0.78);
+    text-decoration: line-through;
+    margin-left: 13px;
+}
+#wishlist strong.item-sold-out{
+    color: #00c18b;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 62px;
+    text-transform: uppercase;
+}
